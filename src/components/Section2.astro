@@ -1,0 +1,49 @@
+---
+// src/components/Section2.astro
+import desktopImage from '../assets/escritorio.png';
+import movilImage from '../assets/moviles.png';
+import desingImage from '../assets/diseno.png';
+---
+
+<section class="w-full h-max flex flex-col items-center justify-center mt-10 mb-10">
+  <div>
+    <h2 class="display flex justify-center text-[36px] font-bold font-[roboto] text-[#212121] text-center mt-15 mb-10">
+      A que nos dedicamos
+    </h2>
+    <div class="flex items-center justify-center gap-10">
+      <div class="relative w-[370px] h-[294px]">
+        <img
+          src={desktopImage.src}
+          alt="Escritorio"
+          class="w-max h-max";
+        />
+        <h3
+          class="absolute bottom-0 text-[14px] text-center font-bold uppercase font-[roboto] text-white bg-[#2f303a]/80 w-full py-[15px]">
+          Aplicaciones de Escritorio
+        </h2>
+      </div>
+      <div class="relative w-[370px] h-[294px]">
+        <img
+          src={movilImage.src}
+          alt="Escritorio"
+          class="w-max h-max";
+        />
+        <h3
+          class="absolute bottom-0 text-[14px] text-center font-bold uppercase font-[roboto] text-white bg-[#2f303a]/80 w-full py-[15px]">
+          Aplicaciones moviles
+        </h2>
+      </div>
+      <div class="relative w-[370px] h-[294px]">
+        <img
+          src={desingImage.src}
+          alt="Escritorio"
+          class="w-max h-max";
+        />
+        <h3
+          class="absolute bottom-0 text-[14px] text-center font-bold uppercase font-[roboto] text-white bg-[#2f303a]/80 w-full py-[15px]">
+          Aplicaciones de diseno
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>

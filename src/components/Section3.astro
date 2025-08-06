@@ -1,0 +1,92 @@
+---
+// src/components/Section3.astro
+
+// Import images and icons
+import Andres from '../assets/andres.jpg';
+import Carlar from '../assets/carla.jpg';
+import Mario from '../assets/mario.jpg';
+import Pablo from '../assets/pablo.jpg';
+
+import instagramIcon from '../assets/instagram.svg';
+import facebookIcon from '../assets/facebook.svg';
+import twitterIcon from '../assets/twitter.svg';
+import linkedinIcon from '../assets/linkedin.svg';
+---
+
+<section class="w-full h-max flex flex-col items-center justify-center mt-30">
+  <div class="flex flex-col items-center justify-center mb-10">
+    <h2 class="display flex justify-center text-[36px] font-bold font-[roboto] text-[#212121] text-center mt-15 mb-10">
+      Nuestro equipo de trabajo
+    </h2>
+    <div class="flex items-center justify-center gap-10 flex-wrap">
+      <div class="w-[270px] h-[428px] shadow-xl rounded-lg bg-white mb-10">
+        <div>
+          <img
+            src={Andres.src}
+            alt="Andres"
+            class="mb-4"
+          />
+        </div>
+        <div class="text-center">
+          <h2 class="text-[16px] font-bold font-[roboto] text-[#212121] mt-5 mb-2">
+            Andres Cubo
+          </h2>
+          <p class="text-[14px] font-[roboto] text-[#757575]">
+            Diseñador de Productos
+          </p>
+        </div>
+      </div>
+      <div class="w-[270px] h-[428px] shadow-xl rounded-lg bg-white mb-10">
+        <div>
+          <img
+            src={Carlar.src}
+            alt="Carla"
+            class="mb-4"
+          />
+        </div>
+        <div class="text-center">
+          <h2 class="text-[16px] font-bold font-[roboto] text-[#212121] mt-5 mb-2">
+            Carla Rivas
+          </h2>
+          <p class="text-[14px] font-[roboto] text-[#757575]">
+            Gerente de Proyectos
+          </p>
+        </div>
+      </div>
+      <div class="w-[270px] h-[428px] shadow-xl rounded-lg bg-white mb-10">
+        <div>
+          <img
+            src={Mario.src}
+            alt="Mario"
+            class="mb-4"
+          />
+        </div>
+        <div class="text-center">
+          <h2 class="text-[16px] font-bold font-[roboto] text-[#212121] mt-5 mb-2">
+            Mario Lopez
+          </h2>
+          <p class="text-[14px] font-[roboto] text-[#757575]">
+            Desarrollador Backend
+          </p>
+        </div>
+      </div>
+      <div class="w-[270px] h-[428px] shadow-xl rounded-lg bg-white mb-10">
+        <div>
+          <img
+            src={Pablo.src}
+            alt="Pablo"
+            class="mb-4"
+          />
+        </div>
+        <div class="text-center">
+          <h2 class="text-[16px] font-bold font-[roboto] text-[#212121] mt-5 mb-2">
+            Pablo Torres
+          </h2>
+          <p class="text-[14px] font-[roboto] text-[#757575]">
+            Desarrollador Frontend
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

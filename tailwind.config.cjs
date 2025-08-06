@@ -9,6 +9,8 @@ module.exports = {
         'accent': '#757575',
         'background': '#2F303A',
         'text': '#1169b1ff',
+        'mini-bg': '#F5F4FA',
+        'opacity-bg': '#2F303A 80'
       },
       fontFamily: {
         // Renombra las fuentes a tu gusto
