@@ -1,0 +1,167 @@
+---
+// src/components/Section1.astro
+import Image1 from '../assets/imagen1.png';
+import Image2 from '../assets/imagen2.png';
+import Image3 from '../assets/imagen3.png';
+import Image4 from '../assets/imagen4.png';
+import Image5 from '../assets/imagen5.png';
+import Image6 from '../assets/imagen6.png';
+import Image7 from '../assets/imagen7.png';
+import Image8 from '../assets/imagen8.png';
+import Image9 from '../assets/imagen9.png';
+---
+
+<section class="py-8">
+  <div class="container mx-auto">
+    <nav class="mb-10">
+      <ul class="flex gap-4 justify-center font-['roboto'] font-bold">
+        <li><a href="#" data-filter="todos" class="bg-[#2196f3] text-white rounded-2xl p-4 hover:bg-[#2196f3] hover:text-white filter-link">Todos</a></li>
+        <li><a href="#" data-filter="sitio-web" class="bg-[#F5F4FA] text-[#212121] rounded-2xl p-4 hover:bg-[#2196f3] hover:text-white filter-link">Sitio-web</a></li>
+        <li><a href="#" data-filter="aplicaciones" class="bg-[#F5F4FA] text-[#212121] rounded-2xl p-4 hover:bg-[#2196f3] hover:text-white filter-link">Aplicaciones</a></li>
+        <li><a href="#" data-filter="diseno" class="bg-[#F5F4FA] text-[#212121] rounded-2xl p-4 hover:bg-[#2196f3] hover:text-white filter-link">Diseno</a></li>
+        <li><a href="#" data-filter="marketing" class="bg-[#F5F4FA] text-[#212121] rounded-2xl p-4 hover:bg-[#2196f3] hover:text-white filter-link">Marketing</a></li>
+      </ul>
+    </nav>
+    <div id="proyectos-container" class="grid grid-cols-3 justify-center items-center gap-6 font-['roboto']">
+      <div class="bg-white w-[370px] h-[400px] shadow" data-category="sitio-web">
+        <div class="group relative overflow-hidden">
+          <img src={Image1.src} alt="Imagen 1" class="w-full h-auto rounded" />
+          <div class="flex relative">
+            <p class="absolute flex justify-center items-center bottom-0 w-[370px] h-[294px] p-6 bg-[#2196f3]/80 text-white font-['roboto'] font-[18px] font-bold transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum debitis vitae accusantium laudantium esse, quae quo magnam sed nihil provident tempora dolorem mollitia! Corporis perspiciatis nihil facilis magni aliquam!</p>
+          </div>
+        </div>
+          <div class="m-2">
+          <h2 class="text-[#212121] text-[18px] font-bold">Tennoduck</h2>
+          <p class="text-[#757575] text-[14px]">Sitio-web</p>
+        </div>
+      </div>
+      <div class="bg-white w-[370px] h-[400px] shadow" data-category="diseno">
+        <div class="group relative overflow-hidden">
+          <img src={Image2.src} alt="Imagen 2" class="w-full h-auto rounded" />
+          <div class="flex relative">
+            <p class="absolute flex justify-center items-center bottom-0 w-[370px] h-[294px] p-6 bg-[#2196f3]/80 text-white font-['roboto'] font-[18px] font-bold transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum debitis vitae accusantium laudantium esse, quae quo magnam sed nihil provident tempora dolorem mollitia! Corporis perspiciatis nihil facilis magni aliquam!</p>
+          </div>
+        </div>
+          <div class="m-2">
+          <h2 class="text-[#212121] text-[18px] font-bold">Póster de Nueva Orleans vs Estrella Dorada</h2>
+          <p class="text-[#757575] text-[14px]">Diseno</p>
+        </div>
+      </div>
+      <div class="bg-white w-[370px] h-[400px] shadow" data-category="aplicaciones">
+        <div class="group relative overflow-hidden">
+          <img src={Image3.src} alt="Imagen 3" class="w-full h-auto rounded" />
+          <div class="flex relative">
+            <p class="absolute flex justify-center items-center bottom-0 w-[370px] h-[294px] p-6 bg-[#2196f3]/80 text-white font-['roboto'] font-[18px] font-bold transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum debitis vitae accusantium laudantium esse, quae quo magnam sed nihil provident tempora dolorem mollitia! Corporis perspiciatis nihil facilis magni aliquam!</p>
+          </div>
+        </div>
+          <div class="m-2">
+          <h2 class="text-[#212121] text-[18px] font-bold">Restaurante de mariscos</h2>
+          <p class="text-[#757575] text-[14px]">Aplicaciones</p>
+        </div>
+      </div>
+      <div class="bg-white w-[370px] h-[400px] shadow" data-category="marketing">
+        <div class="group relative overflow-hidden">
+          <img src={Image4.src} alt="Imagen 4" class="w-full h-auto rounded" />
+          <div class="flex relative">
+            <p class="absolute flex justify-center items-center bottom-0 w-[370px] h-[294px] p-6 bg-[#2196f3]/80 text-white font-['roboto'] font-[18px] font-bold transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum debitis vitae accusantium laudantium esse, quae quo magnam sed nihil provident tempora dolorem mollitia! Corporis perspiciatis nihil facilis magni aliquam!</p>
+          </div>
+        </div>
+          <div class="m-2">
+          <h2 class="text-[#212121] text-[18px] font-bold">Proyectos prime</h2>
+          <p class="text-[#757575] text-[14px]">Marketing</p>
+        </div>
+      </div>
+      <div class="bg-white w-[370px] h-[400px] shadow" data-category="marketing">
+        <div class="group relative overflow-hidden">
+          <img src={Image5.src} alt="Imagen 5" class="w-full h-auto rounded" />
+          <div class="flex relative">
+            <p class="absolute flex justify-center items-center bottom-0 w-[370px] h-[294px] p-6 bg-[#2196f3]/80 text-white font-['roboto'] font-[18px] font-bold transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum debitis vitae accusantium laudantium esse, quae quo magnam sed nihil provident tempora dolorem mollitia! Corporis perspiciatis nihil facilis magni aliquam!</p>
+          </div>
+        </div>
+          <div class="m-2">
+          <h2 class="text-[#212121] text-[18px] font-bold">Proyecto cajas</h2>
+          <p class="text-[#757575] text-[14px]">Marketing</p>
+        </div>
+      </div>
+      <div class="bg-white w-[370px] h-[400px] shadow" data-category="sitio-web">
+        <div class="group relative overflow-hidden">
+          <img src={Image6.src} alt="Imagen 6" class="w-full h-auto rounded" />
+          <div class="flex relative">
+            <p class="absolute flex justify-center items-center bottom-0 w-[370px] h-[294px] p-6 bg-[#2196f3]/80 text-white font-['roboto'] font-[18px] font-bold transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum debitis vitae accusantium laudantium esse, quae quo magnam sed nihil provident tempora dolorem mollitia! Corporis perspiciatis nihil facilis magni aliquam!</p>
+          </div>
+        </div>
+          <div class="m-2">
+          <h2 class="text-[#212121] text-[18px] font-bold">La inspiracion no tiene limites</h2>
+          <p class="text-[#757575] text-[14px]">Sitio-web</p>
+        </div>
+      </div>
+      <div class="bg-white w-[370px] h-[400px] shadow" data-category="diseno">
+        <div class="group relative overflow-hidden">
+          <img src={Image7.src} alt="Imagen 7" class="w-full h-auto rounded" />
+          <div class="flex relative">
+            <p class="absolute flex justify-center items-center bottom-0 w-[370px] h-[294px] p-6 bg-[#2196f3]/80 text-white font-['roboto'] font-[18px] font-bold transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum debitis vitae accusantium laudantium esse, quae quo magnam sed nihil provident tempora dolorem mollitia! Corporis perspiciatis nihil facilis magni aliquam!</p>
+          </div>
+        </div>
+          <div class="m-2">
+          <h2 class="text-[#212121] text-[18px] font-bold">Edicion limitada</h2>
+          <p class="text-[#757575] text-[14px]">Diseno</p>
+        </div>
+      </div>
+      <div class="bg-white w-[370px] h-[400px] shadow" data-category="marketing">
+        <div class="group relative overflow-hidden">
+          <img src={Image8.src} alt="Imagen 8" class="w-full h-auto rounded" />
+          <div class="flex relative">
+            <p class="absolute flex justify-center items-center bottom-0 w-[370px] h-[294px] p-6 bg-[#2196f3]/80 text-white font-['roboto'] font-[18px] font-bold transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum debitis vitae accusantium laudantium esse, quae quo magnam sed nihil provident tempora dolorem mollitia! Corporis perspiciatis nihil facilis magni aliquam!</p>
+          </div>
+        </div>
+          <div class="m-2">
+          <h2 class="text-[#212121] text-[18px] font-bold">Proyecto LAB</h2>
+          <p class="text-[#757575] text-[14px]">Marketing</p>
+        </div>
+      </div>
+      <div class="bg-white w-[370px] h-[400px] shadow" data-category="aplicaciones">
+        <div class="group relative overflow-hidden">
+          <img src={Image9.src} alt="Imagen 9" class="w-full h-auto rounded" />
+          <div class="flex relative">
+            <p class="absolute flex justify-center items-center bottom-0 w-[370px] h-[294px] p-6 bg-[#2196f3]/80 text-white font-['roboto'] font-[18px] font-bold transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum debitis vitae accusantium laudantium esse, quae quo magnam sed nihil provident tempora dolorem mollitia! Corporis perspiciatis nihil facilis magni aliquam!</p>
+          </div>
+        </div>
+          <div class="m-2">
+          <h2 class="text-[#212121] text-[18px] font-bold">Negocios en crecimiento</h2>
+          <p class="text-[#757575] text-[14px]">Aplicaciones</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterLinks = document.querySelectorAll('.filter-link');
+    const projectItems = document.querySelectorAll('[data-category]');
+
+    filterLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const filterValue = e.target.dataset.filter;
+
+        // Elimina la clase activa de todos los enlaces y la agrega al que fue clickeado
+        filterLinks.forEach(item => {
+          item.classList.remove('bg-[#2196f3]', 'text-white');
+          item.classList.add('bg-[#F5F4FA]', 'text-[#212121]');
+        });
+        e.target.classList.remove('bg-[#F5F4FA]', 'text-[#212121]');
+        e.target.classList.add('bg-[#2196f3]', 'text-white');
+
+        // Lógica de filtrado de los proyectos
+        projectItems.forEach(item => {
+          if (filterValue === 'todos' || item.dataset.category === filterValue) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>

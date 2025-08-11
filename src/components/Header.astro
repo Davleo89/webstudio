@@ -1,5 +1,6 @@
 ---
 // src/components/Header.astro
+const currentPath = Astro.url.pathname;
 ---
 
 <header class="w-full">
@@ -12,27 +13,27 @@
     <nav class="display flex gap-8 justify-between">
       <ul class="flex justify-center items-center justify-left gap-8">
         <li>
-          <a href="/" class="relative group text-xl font-[roboto] font-medium text-[#212121] hover:text-[#2196f3] transition-colors duration-300">
+          <a href="/" class={`enlace-menu relative group text-xl font-[roboto] font-medium transition-colors duration-300 ${currentPath === '/' ? 'text-[#2196f3]' : 'text-[#212121] hover:text-[#2196f3]'}`}>
             <span>
               Estudio
             </span>
-            <span class="absolute left-0 bottom-0 w-full h-[4px] bg-[#2196f3] origin-left scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+            <span class={`absolute left-0 bottom-0 w-full h-[4px] transition-transform duration-300 ease-out ${currentPath === '/' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
           </a>
         </li>
         <li>
-          <a href="/portafolio" class="relative group text-xl font-[roboto] font-medium text-[#212121] hover:text-[#2196f3] transition-colors duration-300">
+          <a href="/portafolio" class={`relative group text-xl font-[roboto] font-medium transition-colors duration-300 ${currentPath === '/portafolio' ? 'text-[#2196f3]' : 'text-[#212121] hover:text-[#2196f3]'}`}>
             <span>
               Portafolio
             </span>
-            <span class="absolute left-0 bottom-0 w-full h-[4px] bg-[#2196f3] origin-left scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+            <span class={`absolute left-0 bottom-0 w-full h-[4px] transition-transform duration-300 ease-out ${currentPath === '/portafolio' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
           </a>
         </li>
         <li>
-          <a href="/contactos" class="relative group text-xl font-[roboto] font-medium text-[#212121] hover:text-[#2196f3] transition-colors duration-300">
+          <a href="/contactos" class={`relative group text-xl font-[roboto] font-medium transition-colors duration-300 ${currentPath === './contactos' ? 'text-[#2196f3]' : 'text-[#212121] hover:text-[#2196f3]'}`}>
             <span>
               Contactos
             </span>
-            <span class="absolute left-0 bottom-0 w-full h-[4px] bg-[#2196f3] origin-left scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+            <span class={`absolute left-0 bottom-0 w-full h-[4px] transition-transform duration-300 ease-out ${currentPath === './contactos' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
           </a>
         </li>
       </ul>
